@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import MoviePage from './pages/MoviePage';
@@ -61,6 +62,7 @@ function App() {
               </div>
             </footer>
           </div>
+          <Analytics />
         </Router>
       </AuthProvider>
     </ThemeProvider>
